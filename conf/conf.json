@@ -1,0 +1,35 @@
+{
+	"log": {
+		"version": 1,
+		"disable_existing_loggers": true,
+		"formatters": {
+			"sc_formatter": {
+				"format": "%(asctime)s - %(levelname)s : %(message)s",
+				"datefmt": "%Y%m%d %H:%M:%S"
+			}
+		},
+		"handlers": {
+			"consolehandler": {
+				"class": "logging.StreamHandler",
+				"level": "DEBUG",
+				"formatter": "sc_formatter",
+				"stream": "ext://sys.stdout"
+			}
+		},
+		"loggers": {
+			"sc_logger": {
+				"level": "DEBUG",
+				"handlers": [
+					"consolehandler"
+				],
+				"qualname": "Stochastic Control Project",
+				"propagate": "no"
+			}
+		}
+	},
+	"model": {
+		"k": 0.001,
+		"b": 0.001,
+		"phi": [0.0001, 0.001, 0.01, 0.1]
+	}
+}
