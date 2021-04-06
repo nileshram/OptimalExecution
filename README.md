@@ -1,1 +1,2 @@
-Algo+HFT Project - Optimal Execution with permanent price impact
+# Optimal Execution with permanent price impact
+Final project for Algo+HFT
